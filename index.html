@@ -3,14 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Scoala</title>
+    <style>
+        body{
+            background-image:url("sc9.jpg");
+        //background-repeat:no-repeat;
+        background-size:1400px 750px;}
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            padding: 50px;
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+
+        </style>
+    <script type="text/javascript">
+        function openOnImageClick()
+        {window.open("myHtml.html");
+        }
+    </script>
 </head>
 <body>
-<h1>
+<br>
+<h1 style="text-align:center;font-family: verdana;color:yellow;">
     Bun venit la școala!
-    First Commit!
-    THIS IS A MODIFICATION
-    inca o linie!!!
-    Andreea 
+   made by Umpalumpa Team
 </h1>
+<br>
+<table><tr><td width="600" >
+    <div class="zoom" ><img src="inv.png" width="300" height="350"  onclick="openOnImageClick()"  /></div>
+</td><td width="600">
+    <div class="zoom" ><img src="copil.png" width="300" height="350"  onclick="openOnImageClick()" /></div></td>
+</tr>
+</table>
+</body>
+</html>
 </body>
 </html>
