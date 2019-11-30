@@ -28,8 +28,10 @@
 
         </style>
     <script type="text/javascript">
-        function openOnImageClick()
-        {window.open("myHtml.html");
+        var learn="learning.html";
+        var practice="myHtml.html";
+        function openOnImageClick(page)
+        {window.open(page);
         }
     </script>
 </head>
@@ -41,9 +43,9 @@
 </h1>
 <br>
 <table><tr><td width="600" >
-    <div class="zoom" ><img src="inv.png" width="300" height="350"  onclick="openOnImageClick()"  /></div>
+    <div class="zoom" ><img src="inv.png" width="300" height="350"  onclick="openOnImageClick(learn)"  /></div>
 </td><td width="600">
-    <div class="zoom" ><img src="copil.png" width="300" height="350"  onclick="openOnImageClick()" /></div></td>
+    <div class="zoom" ><img src="copil.png" width="300" height="350"  onclick="openOnImageClick(practice)" /></div></td>
 </tr>
 </table>
 </body>
