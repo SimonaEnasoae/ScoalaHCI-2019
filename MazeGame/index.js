@@ -3,7 +3,7 @@ function rand(max) {
 }
 
 function returnTo(){
-  window.location.assign("test.html");
+  window.location.assign("");
   return false;
 }
 
