@@ -45,8 +45,8 @@ select {
   text-align: center;
   text-decoration: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 input:hover,
 select:hover {
@@ -59,6 +59,24 @@ select:active {
 input:focus,
 select:focus {
   outline: none;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#returnBtn{
+  border-width: 60px 80px 60px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+
 }
 
 
@@ -131,7 +149,7 @@ select:focus {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
-          animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 
 @-webkit-keyframes Gradient {

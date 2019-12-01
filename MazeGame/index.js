@@ -2,6 +2,11 @@ function rand(max) {
   return Math.floor(Math.random() * max);
 }
 
+function returnTo(){
+  window.location.assign("test.html");
+  return false;
+}
+
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
