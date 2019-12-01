@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Școala</title>
+    <title>Jocuri</title>
     <style>
         body{
             background-image:url("resurse/sc9.jpg");
-        //background-repeat:no-repeat;
-        background-size:1400px 750px;}
+            background-size:1400px 750px;}
         * {
             box-sizing: border-box;
         }
@@ -26,10 +25,11 @@
             transform: scale(1.2);
         }
 
-        </style>
+    </style>
     <script type="text/javascript">
-        var learn="learning.html";
-        var practice="games.html";
+        var memory="memoryGame.html";
+        var maze="MazeGame/index.html";
+        var combine="learning.html";
         function openOnImageClick(page)
         {window.open(page);
         }
@@ -37,15 +37,15 @@
 </head>
 <body>
 <br>
-<h1 style="text-align:center;font-family: verdana;color:darkslategrey;background: white">
-    Bun venit la școală!
-</h1>
 <br>
-<table><tr><td width="600" >
-    <div class="zoom" ><img src="resurse/inv.png" width="300" height="350"  onclick="openOnImageClick(learn)"  /></div>
-</td><td width="600">
-    <div class="zoom" ><img src="resurse/copil.png" width="300" height="350"  onclick="openOnImageClick(practice)" /></div></td>
-</tr>
+<table>
+    <tr height="400"><td  width="400"> <div class="zoom" >
+        <img src="resurse/perechi.png" width="300" height="300"  onclick="openOnImageClick(memory)"  /></div></td>
+        <td width="400"> <div class="zoom" >
+            <img src="resurse/maze.png" width="300" height="300"  onclick="openOnImageClick(maze)"  /></div></td>
+        <td width="400"> <div class="zoom" >
+            <img src="resurse/inv.png" width="300" height="300"  onclick="openOnImageClick(combine)"  /></div></td>
+    </tr>
 </table>
 </body>
 </html>
