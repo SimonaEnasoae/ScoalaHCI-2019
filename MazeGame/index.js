@@ -3,7 +3,7 @@ function rand(max) {
 }
 
 function returnTo(){
-  window.location.assign("");
+  window.location.assign("../games.html");
   return false;
 }
 
