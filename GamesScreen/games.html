@@ -5,7 +5,7 @@
     <title>Jocuri</title>
     <style>
         body{
-            background-image:url("resurse/sc9.jpg");
+            background-image:url("../resurse/other/sc9.jpg");
             background-size:1400px 750px;}
         * {
             box-sizing: border-box;
@@ -27,9 +27,9 @@
 
     </style>
     <script type="text/javascript">
-        var memory="memoryGame.html";
-        var maze="MazeGame/index.html";
-        var combine="learning.html";
+        var memory="../MemoryGame/memoryGame.html";
+        var maze="../MazeGame/MazeGame.html";
+        var combine="../LearningScreen/learning.html";
         function openOnImageClick(page)
         {window.location.assign(page); return false;
         }
@@ -40,11 +40,11 @@
 <br>
 <table>
     <tr height="400"><td  width="400"> <div class="zoom" >
-        <img src="resurse/perechi.png" width="300" height="300"  onclick="openOnImageClick(memory)"  /></div></td>
+        <img src="../resurse/other/perechi.png" width="300" height="300" onclick="openOnImageClick(memory)"  /></div></td>
         <td width="400"> <div class="zoom" >
-            <img src="resurse/maze.png" width="300" height="300"  onclick="openOnImageClick(maze)"  /></div></td>
+            <img src="../resurse/other/maze.png" width="300" height="300" onclick="openOnImageClick(maze)"  /></div></td>
         <td width="400"> <div class="zoom" >
-            <img src="resurse/inv.png" width="300" height="300"  onclick="openOnImageClick(combine)"  /></div></td>
+            <img src="../resurse/other/inv.png" width="300" height="300" onclick="openOnImageClick(combine)"  /></div></td>
     </tr>
 </table>
 </body>

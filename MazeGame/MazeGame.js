@@ -3,7 +3,7 @@ function rand(max) {
 }
 
 function returnTo(){
-  window.location.assign("../games.html");
+  window.location.assign("../GamesScreen/games.html");
   return false;
 }
 
@@ -49,7 +49,7 @@ function toggleVisablity(id) {
   }
 }
 
-function Maze(Width, Height) {
+function MazeGame(Width, Height) {
   var mazeMap;
   var width = Width;
   var height = Height;
@@ -530,7 +530,7 @@ window.onload = function() {
   };
   sprite = new Image();
   sprite.src =
-    "images/bus.png" +
+    "MazeImages/bus.png" +
     "?" +
     new Date().getTime();
   sprite.setAttribute("crossOrigin", " ");
@@ -542,7 +542,7 @@ window.onload = function() {
   };
 
   finishSprite = new Image();
-  finishSprite.src = "images/schoolResized.png"+
+  finishSprite.src = "MazeImages/schoolResized.png"+
   "?" +
   new Date().getTime();
   finishSprite.setAttribute("crossOrigin", " ");
@@ -581,7 +581,7 @@ function makeMaze() {
 
   difficulty = 10;
   cellSize = mazeCanvas.width / difficulty;
-  maze = new Maze(difficulty, difficulty);
+  maze = new MazeGame(difficulty, difficulty);
   draw = new DrawMaze(maze, ctx, cellSize, finishSprite);
   player = new Player(maze, mazeCanvas, cellSize, displayVictoryMess, sprite);
   if (document.getElementById("mazeContainer").style.opacity < "100") {

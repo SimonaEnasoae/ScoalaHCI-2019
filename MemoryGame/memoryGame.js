@@ -73,6 +73,6 @@ function resetBoard() {
     });
 })();
 function myFunction(){
-    window.location.assign("index.html");
+    window.location.assign("MazeGame.html");
 }
 cards.forEach(card => card.addEventListener('click', flipCard));
