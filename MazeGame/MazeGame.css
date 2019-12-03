@@ -61,25 +61,6 @@ select:focus {
   outline: none;
 }
 
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-#returnBtn{
-  border-width: 60px 80px 60px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 0;
-  margin-left: 30px;
-
-}
-
-
 #Message-Container {
   visibility: hidden;
   color: white;
