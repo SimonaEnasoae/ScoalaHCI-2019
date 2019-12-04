@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ScoalaHCI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScoalaHCI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamesScreen/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamesScreen/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearningScreen/learning.html" beforeDir="false" afterPath="$PROJECT_DIR$/LearningScreen/learning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +77,9 @@
       <workItem from="1575201113488" duration="765000" />
       <workItem from="1575297233856" duration="1994000" />
       <workItem from="1575404288560" duration="1917000" />
+      <workItem from="1575408788148" duration="78000" />
+      <workItem from="1575468770225" duration="954000" />
+      <workItem from="1575470990810" duration="3000" />
     </task>
     <servers />
   </component>
