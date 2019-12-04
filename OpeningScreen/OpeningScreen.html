@@ -29,22 +29,35 @@
         </style>
 
      <script type="text/javascript">
-    var learn="../LearningScreen/learning.html";
+         var learn="../LearningScreen/learning.html";
     var practice="../GamesScreen/games.html";
     function openOnImageClick(page)
     {window.location.assign(page); return false;
+    }
+    function PlaySound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.play();
+    }
+
+    function StopSound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.pause();
+        thissound.currentTime = 0;
     }</script>
 </head>
 <body>
+<audio id='mySound'><source src='../resurse/sounds/învăţăm.m4a'></audio>
+<audio id='mySound2'><source src='../resurse/sounds/ne%20jucăm.m4a'></audio>
 <br>
 <h1 style="text-align:center;font-family: verdana;color:darkslategrey;background: white">
     Bun venit la școală!
 </h1>
 <br>
 <table><tr><td width="600" >
-    <div class="zoom" ><img src="../resurse/other/inv.png" width="300" height="350" onclick="openOnImageClick(learn)"  /></div>
+    <div class="zoom" ><img src="../resurse/other/inv.png" width="300" height="350" onclick="openOnImageClick(learn)"  onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/>
+      </div>
 </td><td width="600">
-    <div class="zoom" ><img src="../resurse/other/copil.png" width="300" height="350" onclick="openOnImageClick(practice)" /></div></td>
+    <div class="zoom" ><img src="../resurse/other/copil.png" width="300" height="350" onclick="openOnImageClick(practice)" onmouseover="PlaySound('mySound2')" onmouseout="StopSound('mySound2')"/></div></td>
 </tr>
 </table>
 </body>
