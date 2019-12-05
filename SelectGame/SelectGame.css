@@ -74,7 +74,7 @@ body {
 }
 
 #check {
-
+    display: none;
     cursor: pointer;
     position: fixed;
     top: 90%;
