@@ -167,9 +167,8 @@ displayImages();
 var getDiv = document.getElementById('imgs');
 var allImages = getDiv.getElementsByTagName('img');
 var checkBtn = document.getElementById("check");
-
+var k=0;
 [].forEach.call(allImages, function (image) {
-    k=0;
     image.addEventListener("click", () => {
         if (!isCorrect(image)) {
             var sound = new Audio();
@@ -178,6 +177,16 @@ var checkBtn = document.getElementById("check");
         }else{
             image.classList.toggle('active');
             k++;
+            if(k===8){
+                var victorie = new Audio();
+                victorie.src = "sounds/victoryGame.mp3";
+                victorie.play();
+                [].forEach.call(allImages, function (image){
+                    if(!image.classList.contains("active")){
+                        image.style.display = "none";
+                    }else{image.classList.toggle("active")}
+                });
+            }
         }
     })
 });

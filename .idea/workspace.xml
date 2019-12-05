@@ -2,87 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SelectGame/SelectGame.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/SelectGame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/SelectGame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/icons/buttons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/icons/speaker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/farfurie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/frigider.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/lac_unghii.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/masinuta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/mixer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/papusa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/pasta_de_dinti.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/pat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/perna.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/pijama.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/robot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/sampon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/sezlong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/televizor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/non-scoala/uscator_par.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/acuarele.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/birou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/caiet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/camasa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/carte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/creion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/creta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/foarfeca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/ghiozdan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/minge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/penar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/sacou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/saltea.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/scaun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/scoci.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/socotitoare.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/sonerie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/stilou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/scoala/tabla2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/acuarele.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/birou.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/caiet.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/camasa.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/carte.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/cerinta1.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/cerinta2.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/cerinta3.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/creion.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/creta.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/farfurie.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/foarfeca.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/frigider.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/ghiozdan.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/lac_de_unghii.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/maiIncearca1.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/masinuta.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/minge.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/mixer.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/ne jucăm.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/papusa.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/pasta de dinti.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/pat.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/penar.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/perna.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/pijamale.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/robot.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/sacou.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/saltea.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/sală.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/sampon.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/scoci.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/sezlong.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/socotitoare.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/sonerie.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/stilou.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/tabla.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/televizor.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/uscator de par.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/victoryGame.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/sounds/învăţăm.m4a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +84,7 @@
       <workItem from="1575466347607" duration="5517000" />
       <workItem from="1575484198626" duration="773000" />
       <workItem from="1575511094396" duration="4725000" />
+      <workItem from="1575526762567" duration="459000" />
     </task>
     <servers />
   </component>
