@@ -8,12 +8,24 @@
     border-style: solid;
 }
 
-#leftArrowBtn{
-    border-width: 60px 80px 60px 0;
-    border-color: transparent #fff transparent transparent;
-    left: 0;
-    margin-left: 30px;
+.arrow2 {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
 }
+
+#leftArrowBtn{
+     border-width: 60px 80px 60px 0;
+     border-color: transparent #fff transparent transparent;
+     left: 0;
+     margin-left: 30px;
+ }
+
+
 
 #rightArrowBtn{
     border-width: 60px 0 60px 80px;
