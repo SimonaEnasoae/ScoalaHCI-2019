@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 1280px;
+    margin: 50px 350px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.container .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 1s;
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
