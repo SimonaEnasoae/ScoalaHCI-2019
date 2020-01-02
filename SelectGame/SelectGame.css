@@ -66,11 +66,12 @@ body {
 
 
 #speaker {
+    position: fixed;
     cursor: pointer;
     width: 10%;
     height: 10%;
     top: 20%;
-    left: 20%;
+    margin-left: 30px;
 }
 
 #check {
@@ -83,7 +84,7 @@ body {
 
 
 .imgs img {
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 
