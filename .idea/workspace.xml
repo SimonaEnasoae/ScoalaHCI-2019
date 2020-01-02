@@ -2,90 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SelectGame/SelectGameTest.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/SelectGameTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SelectGame/SelectGameTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/icons/buttons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/icons/speaker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/farfurie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/frigider.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/lac_unghii.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/masinuta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/mixer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/papusa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/pasta_de_dinti.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/pat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/perna.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/pijama.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/robot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/sampon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/sezlong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/televizor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/non-scoala/uscator_par.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/acuarele.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/birou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/caiet.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/camasa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/carte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/creion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/creta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/foarfeca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/ghiozdan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/minge.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/penar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/sacou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/saltea.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/scaun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/scoci.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/socotitoare.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/sonerie.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/stilou.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/scoala/tabla2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/acuarele.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/birou.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/caiet.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/camasa.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/carte.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/cerinta1.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/cerinta2.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/cerinta3.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/creion.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/creta.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/farfurie.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/foarfeca.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/frigider.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/ghiozdan.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/lac_de_unghii.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/maiIncearca1.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/masinuta.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/minge.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/mixer.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/ne jucăm.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/papusa.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/pasta de dinti.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/pat.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/penar.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/perna.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/pijamale.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/robot.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/sacou.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/saltea.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/sală.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/sampon.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/scoci.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/sezlong.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/socotitoare.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/sonerie.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/stilou.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/tabla.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/televizor.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/uscator de par.m4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/victoryGame.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TRASH/sounds/învăţăm.m4a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/TRASH/SelectGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/TRASH/SelectGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/TRASH/SelectGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGameTest.css" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGameTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGameTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +93,7 @@
       <workItem from="1577926073200" duration="3185000" />
       <workItem from="1577964620112" duration="3166000" />
       <workItem from="1577979633137" duration="8058000" />
+      <workItem from="1577997497944" duration="70000" />
     </task>
     <servers />
   </component>
