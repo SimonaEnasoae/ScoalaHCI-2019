@@ -76,7 +76,7 @@ var soundsNonScoalaArray = [
     "sounds/masinuta.m4a",
     "sounds/mixer.m4a",
     "sounds/papusa.m4a",
-    "sounds/pasta de dinti.m4a",
+    "sounds/pasta_de_dinti.m4a",
     "sounds/pat.m4a",
     "sounds/perna.m4a",
     "sounds/pijamale.m4a",
@@ -84,27 +84,27 @@ var soundsNonScoalaArray = [
     "sounds/sampon.m4a",
     "sounds/sezlong.m4a",
     "sounds/televizor.m4a",
-    "sounds/uscator de par.m4a"
+    "sounds/uscator_de_par.m4a"
 ];
 var correctImages = [];
 var wrongImages = [];
 var usedImages = [];
 var usedImagesCount = 0;
 
-function getImage(arr, target) {
-    var num = Math.floor(Math.random() * (arr.length));
+function getImage(fromArr, toTarget, usedImages, usedImagesCount) {
+    var num = Math.floor(Math.random() * (fromArr.length));
     if (!usedImages[num]) {
         var img = document.createElement("img");
-        img.src = arr[num];
-        target.push(img);
+        img.src = fromArr[num];
+        toTarget.push(img);
         usedImages[num] = true;
         usedImagesCount++;
-        if (usedImagesCount === arr.length) {
+        if (usedImagesCount === fromArr.length) {
             usedImagesCount = 0;
             usedImages = [];
         }
     } else {
-        getImage(arr, target);
+        getImage(fromArr, toTarget);
     }
 }
 

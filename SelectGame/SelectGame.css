@@ -7,7 +7,7 @@ body{
 
 .container{
     width: 1280px;
-    margin: 50px 350px 0;
+    margin: 50px 400px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@ body{
     position: relative;
     width: 200px;
     height: 200px;
-    background: #ff0;
+    background: transparent;
     margin: 5px;
     box-sizing: border-box;
     display: inline-block;
@@ -27,6 +27,7 @@ body{
 .container .box .imgBox{
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .container .box .imgBox img{
@@ -34,6 +35,18 @@ body{
     transition: transform 1s;
 }
 
-.container .box:hover .imgBox img{
+.container .box:hover .imgBox img {
     transform: scale(1.2);
 }
+
+#speaker {
+    position: absolute;
+    cursor: pointer;
+    width: 10%;
+    height: auto;
+    top: 20px;
+    margin-left: 30px;
+}
+
+
+
