@@ -109,68 +109,79 @@ var speaker = document.getElementById("speaker");
 var currentCorrect = 0;
 var currentSelected = 0;
 
-speaker.addEventListener("click", () => {
-    var sound = new Audio();
-    sound.src = "sounds/cerinta1.m4a";
-    sound.play();
-});
 
-for (var i = 0; i < doc.length; i++) {
-    doc[i].addEventListener('click', function () {
-        this.classList.toggle("select");
-        if (this.classList.contains("select")) {
-            this.style.opacity = "0.6";
-            currentSelected++;
-        } else {
-            this.style.opacity = "1";
-            currentSelected--;
-        }
-
-        if (this.classList.contains("select") && isCorrect(this)) {
-            currentCorrect++;
-        } else if (!this.classList.contains("select") && isCorrect(this)) {
-            currentCorrect--;
-        }
-
-        if (checkWinCondition()) {
-            console.log("YOU WON");
-            var sound = new Audio();
-            sound.src = "sounds/victoryGame.mp3"
-            sound.play();
-            for (var j = 0; j < doc.length; j++) {
-                if (!isCorrect(doc[j])) {
-                    doc[j].style.visibility = 'hidden';
-                }
+function speakerEvenListener(){
+    var speakerSound = new Audio();
+    speakerSound.src = "sounds/cerinta1.m4a";
+    speaker.addEventListener("click", () => {
+        if(!speakerSound.pause()) speakerSound.play();
+    });
+}
+function imagesOnClick(){
+    for (var i = 0; i < doc.length; i++) {
+        doc[i].addEventListener('click', function () {
+            this.classList.toggle("select");
+            if (this.classList.contains("select")) {
+                this.style.opacity = "0.6";
+                currentSelected++;
+            } else {
+                this.style.opacity = "1";
+                currentSelected--;
             }
+
+            if (this.classList.contains("select") && isCorrect(this)) {
+                currentCorrect++;
+            } else if (!this.classList.contains("select") && isCorrect(this)) {
+                currentCorrect--;
+            }
+
+            if (checkWinCondition()) {
+                winEffect();
+            }
+
+        });
+    }
+}
+function winEffect(){
+    console.log("YOU WON");
+    var sound = new Audio();
+    sound.src = "sounds/victoryGame.mp3";
+    sound.play();
+    for (var j = 0; j < doc.length; j++) {
+        if (!isCorrect(doc[j])) {
+            doc[j].style.visibility = 'hidden';
+        }else{
+            doc[j].style.opacity = '1';
         }
-
-    });
+    }
 }
-
-var sound = new Audio();
-for (var j = 0; j < doc.length; j++) {
-    doc[j].addEventListener('mouseover', function () {
-        sound.src = this.alt;
-        sound.play();
-    });
-    doc[j].addEventListener('mouseout', function () {
-        sound.pause();
-        sound.currentTime = 0;
-    })
+function imagesEventListener(){
+    var sound = new Audio();
+    for (var j = 0; j < doc.length; j++) {
+        doc[j].addEventListener('mouseover', function () {
+            sound.src = this.alt;
+            sound.play();
+        });
+        doc[j].addEventListener('mouseout', function () {
+            sound.pause();
+            sound.currentTime = 0;
+        })
+    }
 }
-
-
 function isCorrect(image) {
     for (var i = 0; i < schoolImgs.length; i++) {
         if (image.id === schoolImgs[i].name) return true
     }
     return false;
 }
-
-
 function checkWinCondition() {
     return currentSelected === currentCorrect && currentSelected === nrCorrectImgs;
 }
+
+speakerEvenListener();
+imagesEventListener();
+imagesOnClick();
+
 
 
 
