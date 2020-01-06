@@ -6,12 +6,9 @@
     <title>HCI MazeGame Game</title>
     <link rel="stylesheet" href="MazeGame.css">
     <link rel="stylesheet" href="../css/all.css">
-
-
 </head>
 
 <body>
-
 <html lang="en-GB">
 <head>
     <meta charset="utf-8">
@@ -22,22 +19,21 @@
         <div id="message">
             <h1>Felicitari!</h1>
             <p>Ai ajuns la școală.</p>
-            <p id="moves"></p>
             <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container'); makeMaze()"
                    value="Din nou!"/>
         </div>
     </div>
     <div id="menu">
-
-        <input id="startMazfeBtn" type="button" onclick="makeMaze()" value="Start"/>
+        <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Maze Game"/>
     </div>
     <div id="view">
         <div id="mazeContainer">
             <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
         </div>
     </div>
-    <div id="leftArrowBtn" class="arrow" onclick="returnTo('../GamesScreen/games.html')"></div>
 </div>
+<i class="fas fa-arrow-alt-circle-left" type="button" id="returnBtn" onclick="returnTo('../GamesScreen/games.html')"></i>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
@@ -46,6 +42,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
 <script src="MazeGame.js"></script>
 <script  src="../js/all.js"></script>
+<script src="https://kit.fontawesome.com/9c9757ddb3.js" crossorigin="anonymous"></script>
 
 
 </body>

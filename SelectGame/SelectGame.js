@@ -1,131 +1,74 @@
-var speaker = document.getElementById("speaker");
-
-
-speaker.addEventListener("click", () => {
-    var sound = new Audio();
-    sound.src = "sounds/cerinta1.m4a";
-    sound.play();
-});
-
-var scoalaArray = [
-    "scoala/acuarele.jpg",
-    "scoala/birou.jpg",
-    "scoala/caiet.jpg",
-    "scoala/camasa.jpg",
-    "scoala/carte.jpg",
-    "scoala/creion.jpg",
-    "scoala/creta.jpg",
-    "scoala/foarfeca.jpg",
-    "scoala/ghiozdan.jpg",
-    "scoala/minge.jpg",
-    "scoala/penar.jpg",
-    "scoala/sacou.jpg",
-    "scoala/saltea.jpg",
-    "scoala/scaun.jpg",
-    "scoala/scoci.jpg",
-    "scoala/socotitoare.jpg",
-    "scoala/sonerie.jpg",
-    "scoala/stilou.jpg",
-    "scoala/tabla2.jpg"
+var schoolImgs = [
+    {name: "acuarele", src: "scoala/acuarele.jpg", sound: "sounds/acuarele.m4a"},
+    {name: "birou", src: "scoala/birou.jpg", sound: "sounds/birou.m4a"},
+    {name: "caiet", src: "scoala/caiet.jpg", sound: "sounds/caiet.m4a"},
+    {name: "camasa", src: "scoala/camasa.jpg", sound: "sounds/camasa.m4a"},
+    {name: "carte", src: "scoala/carte.jpg", sound: "sounds/carte.m4a"},
+    {name: "creion", src: "scoala/creion.jpg", sound: "sounds/creion.m4a"},
+    {name: "creta", src: "scoala/creta.jpg", sound: "sounds/creta.m4a"},
+    {name: "foarfeca", src: "scoala/foarfeca.jpg", sound: "sounds/foarfeca.m4a"},
+    {name: "ghiozdan", src: "scoala/ghiozdan.jpg", sound: "sounds/ghiozdan.m4a"},
+    {name: "minge", src: "scoala/minge.jpg", sound: "sounds/minge.m4a"},
+    {name: "penar", src: "scoala/penar.jpg", sound: "sounds/penar.m4a"},
+    {name: "sacou", src: "scoala/sacou.jpg", sound: "sounds/sacou.m4a"},
+    {name: "saltea", src: "scoala/saltea.jpg", sound: "sounds/saltea.m4a"},
+    {name: "scaun", src: "scoala/scaun.jpg", sound: "sounds/sezlong.m4a"},
+    {name: "scoci", src: "scoala/scoci.jpg", sound: "sounds/scoci.m4a"},
+    {name: "socotitoare", src: "scoala/socotitoare.jpg", sound: "sounds/socotitoare.m4a"},
+    {name: "sonerie", src: "scoala/sonerie.jpg", sound: "sounds/sonerie.m4a"},
+    {name: "stilou", src: "scoala/stilou.jpg", sound: "sounds/stilou.m4a"},
+    {name: "tabla", src: "scoala/tabla2.jpg", sound: "sounds/tabla.m4a"}
 ];
 
-var soundsScoalaArray = [
-    "sounds/acuarele.m4a",
-    "sounds/birou.m4a",
-    "sounds/caiet.m4a",
-    "sounds/camasa.m4a",
-    "sounds/carte.m4a",
-    "sounds/creion.m4a",
-    "sounds/creta.m4a",
-    "sounds/foarfeca.m4a",
-    "sounds/ghiozdan.m4a",
-    "sounds/minge.m4a",
-    "sounds/penar.m4a",
-    "sounds/sacou.m4a",
-    "sounds/saltea.m4a",
-    "sounds/victoryGame.m4a",
-    "sounds/scoci.m4a",
-    "sounds/socotitoare.m4a",
-    "sounds/sonerie.m4a",
-    "sounds/stilou.m4a",
-    "sounds/tabla.m4a"
+var nonSchoolImgs = [
+    {name: "farfurie", src: "non-scoala/farfurie.jpg", sound: "sounds/farfurie.m4a"},
+    {name: "frigider", src: "non-scoala/frigider.jpg", sound: "sounds/frigider.m4a"},
+    {name: "lac_unghii", src: "non-scoala/lac_unghii.jpg", sound: "sounds/lac_de_unghii.m4a"},
+    {name: "masinuta", src: "non-scoala/masinuta.jpg", sound: "sounds/masinuta.m4a"},
+    {name: "mixer", src: "non-scoala/mixer.jpg", sound: "sounds/mixer.m4a"},
+    {name: "papusa", src: "non-scoala/papusa.jpg", sound: "sounds/papusa.m4a"},
+    {name: "pasta_de_dinti", src: "non-scoala/pasta_de_dinti.jpg", sound: "sounds/pasta_de_dinti.m4a"},
+    {name: "pat", src: "non-scoala/pat.jpg", sound: "sounds/pat.m4a"},
+    {name: "perna", src: "non-scoala/perna.jpg", sound: "sounds/perna.m4a"},
+    {name: "pijama", src: "non-scoala/pijama.jpg", sound: "sounds/pijamale.m4a"},
+    {name: "robot", src: "non-scoala/robot.jpg", sound: "sounds/robot.m4a"},
+    {name: "sampon", src: "non-scoala/sampon.jpg", sound: "sounds/sampon.m4a"},
+    {name: "sezlong", src: "non-scoala/sezlong.jpg", sound: "sounds/sezlong.m4a"},
+    {name: "televizor", src: "non-scoala/televizor.jpg", sound: "sounds/televizor.m4a"},
+    {name: "uscator_par", src: "non-scoala/uscator_par.jpg", sound: "sounds/uscator_de_par.m4a"}
 ];
 
-var nonScoalaArray = [
-    "non-scoala/farfurie.jpg",
-    "non-scoala/frigider.jpg",
-    "non-scoala/lac_unghii.jpg",
-    "non-scoala/masinuta.jpg",
-    "non-scoala/mixer.jpg",
-    "non-scoala/papusa.jpg",
-    "non-scoala/pasta_de_dinti.jpg",
-    "non-scoala/pat.jpg",
-    "non-scoala/perna.jpg",
-    "non-scoala/pijama.jpg",
-    "non-scoala/robot.jpg",
-    "non-scoala/sampon.jpg",
-    "non-scoala/sezlong.jpg",
-    "non-scoala/televizor.jpg",
-    "non-scoala/uscator_par.jpg"
-];
+var rows = ["firstRow", "secondRow", "thirdRow"];
+var imgPerRow = 4;
+var nrCorrectImgs = 8;
+var nrIncorrectImgs = 4;
+var totalImagesDisplayed = nrCorrectImgs + nrIncorrectImgs;
 
-var soundsNonScoalaArray = [
-    "sounds/farfurie.m4a",
-    "sounds/frigider.m4a",
-    "sounds/lac_de_unghii.m4a",
-    "sounds/masinuta.m4a",
-    "sounds/mixer.m4a",
-    "sounds/papusa.m4a",
-    "sounds/pasta de dinti.m4a",
-    "sounds/pat.m4a",
-    "sounds/perna.m4a",
-    "sounds/pijamale.m4a",
-    "sounds/robot.m4a",
-    "sounds/sampon.m4a",
-    "sounds/sezlong.m4a",
-    "sounds/televizor.m4a",
-    "sounds/uscator de par.m4a"
-];
-var correctImages = [];
-var wrongImages = [];
-var usedImages = [];
-var usedImagesCount = 0;
 
-function getImage(arr, target) {
-    var num = Math.floor(Math.random() * (arr.length));
+function getRandomImage(fromArr, toTarget, usedImages, usedImagesCount) {
+    var num = Math.floor(Math.random() * (fromArr.length));
     if (!usedImages[num]) {
-        var img = document.createElement("img");
-        img.src = arr[num];
-        target.push(img);
+        toTarget.push(fromArr[num]);
         usedImages[num] = true;
         usedImagesCount++;
-        if (usedImagesCount === arr.length) {
+        if (usedImagesCount === fromArr.length) {
             usedImagesCount = 0;
             usedImages = [];
         }
     } else {
-        getImage(arr, target);
+        getRandomImage(fromArr, toTarget, usedImages, usedImagesCount);
     }
 }
 
-function generateCorrectImages() {
-    var i;
-    for (i = 0; i < 8; i++) {
-        getImage(scoalaArray, correctImages);
+function generateImages(targetArray, nrOfImages) {
+    var usedImages = [];
+    var usedImagesCount = 0;
+    var result = [];
+    for (var i = 0; i < nrOfImages; i++) {
+        getRandomImage(targetArray, result, usedImages, usedImagesCount);
     }
-    usedImages = [];
-    usedImagesCount = 0;
-}
-
-function generateWrongImages() {
-    var i;
-    for (i = 0; i < 4; i++) {
-        getImage(nonScoalaArray, wrongImages);
-    }
-    usedImages = [];
-    usedImagesCount = 0;
-}
-
+    return result;
+} //generate N number of images from targetArray
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
     // While there remain elements to shuffle...
@@ -141,72 +84,108 @@ function shuffle(array) {
     return array;
 }
 
-function displayImages() {
-    generateCorrectImages();
-    generateWrongImages();
-    var fullArray = correctImages.concat(wrongImages);
-    var shuffledArray = shuffle(fullArray);
-    var i;
-    for (i = 0; i < shuffledArray.length; i++) {
-        document.getElementById("imgs").appendChild(shuffledArray[i]);
-    }
-
-
-}
-
-function isCorrect(image) {
-    return scoalaArray.includes(image.getAttribute('src'));
-}
-
-function toggleActiveState() {
-    this.classList.toggle('active');
-}
-
-displayImages();
-
-var getDiv = document.getElementById('imgs');
-var allImages = getDiv.getElementsByTagName('img');
-var checkBtn = document.getElementById("check");
-var k=0;
-[].forEach.call(allImages, function (image) {
-    image.addEventListener("click", () => {
-        if (!isCorrect(image)) {
-            var sound = new Audio();
-            sound.src = "sounds/maiIncearca1.m4a"
-            sound.play();
-        }else{
-            image.classList.toggle('active');
-            k++;
-            if(k===8){
-                var victorie = new Audio();
-                victorie.src = "sounds/victoryGame.mp3";
-                victorie.play();
-                [].forEach.call(allImages, function (image){
-                    if(!image.classList.contains("active")){
-                        image.style.display = "none";
-                    }else{image.classList.toggle("active")}
-                });
-            }
+function addImages() {
+    var correctImgs = generateImages(schoolImgs, nrCorrectImgs);
+    var incorrectImgs = generateImages(nonSchoolImgs, nrIncorrectImgs);
+    var result = shuffle(correctImgs.concat(incorrectImgs));
+    var k = 0;
+    for (var i = 0; i < rows.length; i++) {
+        var div = document.getElementById(rows[i]);
+        for (var j = 0; j < imgPerRow; j++) {
+            var image = result[k++];
+            div.innerHTML += "<div class=\"box\"><div class=\"imgBox\" id=\"imgBox\"><img src=\"" + image.src + '\"' + ' id=\"' + image.name + '\" ' + "alt=\"" + image.sound + '\"' + "></div></div>";
         }
-    })
-});
+    }
+} //concatenates 2 arrays of correct and incorrect Images, shuffles and display them
 
-checkBtn.addEventListener("click", ()=>{
-   if(k===8){
-       var sound = new Audio();
-       sound.src = "sounds/victoryGame.mp3";
-       sound.play();
-       [].forEach.call(allImages, function (image){
-            if(!image.classList.contains("active")){
-                image.style.display = "none";
-            }else{image.classList.toggle("active")}
-       })
-   }else{
-       var sad = new Audio();
-       sad.src = "sounds/maiIncearca1.m4a";
-       sad.play();
-   }
-});
+function main() {
+    addImages();
+}
+
+main();
+
+var doc = document.getElementById("container").getElementsByTagName("img");
+var speaker = document.getElementById("speaker");
+var currentCorrect = 0;
+var currentSelected = 0;
+
+
+function speakerEvenListener(){
+    var speakerSound = new Audio();
+    speakerSound.src = "sounds/cerinta1.m4a";
+    speaker.addEventListener("click", () => {
+        if(!speakerSound.pause()) speakerSound.play();
+    });
+}
+function imagesOnClick(){
+    for (var i = 0; i < doc.length; i++) {
+        doc[i].addEventListener('click', function () {
+            this.classList.toggle("select");
+            if (this.classList.contains("select")) {
+                this.style.opacity = "0.6";
+                currentSelected++;
+            } else {
+                this.style.opacity = "1";
+                currentSelected--;
+            }
+
+            if (this.classList.contains("select") && isCorrect(this)) {
+                currentCorrect++;
+            } else if (!this.classList.contains("select") && isCorrect(this)) {
+                currentCorrect--;
+            }
+
+            if (checkWinCondition()) {
+                winEffect();
+            }
+
+        });
+    }
+}
+function winEffect(){
+    console.log("YOU WON");
+    var sound = new Audio();
+    sound.src = "sounds/victoryGame.mp3";
+    sound.play();
+    for (var j = 0; j < doc.length; j++) {
+        if (!isCorrect(doc[j])) {
+            doc[j].style.visibility = 'hidden';
+        }else{
+            doc[j].style.opacity = '1';
+        }
+    }
+}
+function imagesEventListener(){
+    var sound = new Audio();
+    for (var j = 0; j < doc.length; j++) {
+        doc[j].addEventListener('mouseover', function () {
+            sound.src = this.alt;
+            sound.play();
+        });
+        doc[j].addEventListener('mouseout', function () {
+            sound.pause();
+            sound.currentTime = 0;
+        })
+    }
+}
+function isCorrect(image) {
+    for (var i = 0; i < schoolImgs.length; i++) {
+        if (image.id === schoolImgs[i].name) return true
+    }
+    return false;
+}
+function checkWinCondition() {
+    return currentSelected === currentCorrect && currentSelected === nrCorrectImgs;
+}
+
+speakerEvenListener();
+imagesEventListener();
+imagesOnClick();
+
+
+
+
+
 
 
 
