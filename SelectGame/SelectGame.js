@@ -1,6 +1,6 @@
 var schoolImgs = [
     {name: "acuarele", src: "../resurse/scoala/acuarele.jpg", sound: "../resurse/sounds/acuarele.m4a"},
-    {name: "birou", src: "../resurse/scoala/birou.jpg", sound: "../resurse/sounds/birou.m4a"},
+    {name: "birou", src: "../resurse/scoala/birou.jpg", sound: "../resurse/sounds/banca.m4a"},
     {name: "caiet", src: "../resurse/scoala/caiet.jpg", sound: "../resurse/sounds/caiet.m4a"},
     {name: "camasa", src: "../resurse/scoala/camasa.jpg", sound: "../resurse/sounds/camasa.m4a"},
     {name: "carte", src: "../resurse/scoala/carte.jpg", sound: "../resurse/sounds/carte.m4a"},
@@ -154,6 +154,7 @@ function winEffect(){
             doc[j].style.opacity = '1';
         }
     }
+    imagesUnclickable();
 }
 function imagesEventListener(){
     var sound = new Audio();
@@ -177,10 +178,21 @@ function isCorrect(image) {
 function checkWinCondition() {
     return currentSelected === currentCorrect && currentSelected === nrCorrectImgs;
 }
+function playAuto(){
+    var sample = document.getElementById("foobar");
+    sample.play();
+}
+function imagesUnclickable(){
+    for (var i = 0; i < doc.length; i++){
+        doc[i].style.pointerEvents = "none";
+    }
+}
+
 
 speakerEvenListener();
 imagesEventListener();
 imagesOnClick();
+playAuto();
 
 
 
