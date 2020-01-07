@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/all.css">
     <style>
         body{
-            background-image:url("../resurse/other/sc9.jpg");
+            background-image:url("../resurse/other/bg_joc.png");
             background-size:1400px 750px;}
         * {
             box-sizing: border-box;
@@ -34,18 +34,31 @@
         function openOnImageClick(page)
         {window.location.assign(page); return false;
         }
+        function PlaySound(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.play();
+        }
+
+        function StopSound(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.pause();
+            thissound.currentTime = 0;
+        }
     </script>
 </head>
 <body>
+<audio id='mySound'><source src='../resurse/sounds/jocul%20cu%20perechi.m4a'></audio>
+<audio id='mySound2'><source src='../resurse/sounds/învăţăm.m4a'></audio>
+<audio id='mySound3'><source src='../resurse/sounds/învăţăm.m4a'></audio>
 <br>
 <br>
 <table>
-    <tr height="400"><td  width="400"> <div class="zoom" >
-        <img src="../resurse/other/perechi.png" width="300" height="300" onclick="openOnImageClick(memory)"  /></div></td>
+    <tr height="400"><td width="200"></td><td  width="200" align="right"> <div class="zoom" >
+        <img src="../resurse/other/creioane.png" width="200" height="300"  onclick="openOnImageClick(memory)"  onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"  /></div></td>
         <td width="400"> <div class="zoom" >
-            <img src="../resurse/other/maze.png" width="300" height="300" onclick="openOnImageClick(maze)"  /></div></td>
-        <td width="400"> <div class="zoom" >
-            <img src="../resurse/other/selection.png" width="300" height="300" onclick="openOnImageClick(combine)"  /></div></td>
+            <img src="../resurse/other/book.png" width="300" height="400" onclick="openOnImageClick(maze)" onmouseover="PlaySound('mySound2')" onmouseout="StopSound('mySound2')" /></div></td><td width="100"></td>
+        <td width="200"> <div class="zoom" >
+            <img src="../resurse/other/pen.png" width="200" height="300" onclick="openOnImageClick(combine)" onmouseover="PlaySound('mySound3')" onmouseout="StopSound('mySound3')" /></div></td>
     </tr>
 </table>
 <i class="fas fa-arrow-alt-circle-left" type="button" id="returnBtn" onclick="returnTo('../OpeningScreen/OpeningScreen.html')"></i>

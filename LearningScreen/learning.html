@@ -5,8 +5,8 @@
     <title>Învățare</title>
     <link rel="stylesheet" href="../css/all.css">
     <style>
-        body{
-            background-image:url("../resurse/other/sc9.jpg");
+        body{    background-color: lightsteelblue;
+
             background-size:1400px 750px;}
         * {
             box-sizing: border-box;
@@ -26,30 +26,11 @@
             transform: scale(1.2);
         }
 
+
     </style>
     <script>
-        var video1="video1";
-        var video2="video2";
-        var video3="video3";
-        var video4="video4";
-        var video5="video5";
-        function openFullscreen(id_video) {
-            var elem = document.getElementById(id_video);
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-                elem.play();
-            } else if (elem.mozRequestFullScreen) { /* Firefox */
-                elem.play();
-            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
 
-                elem.play();
 
-            } else if (elem.msRequestFullscreen) { /* IE/Edge */
-                elem.msRequestFullscreen();
-                elem.controls=false;
-                elem.play();
-            }
-        }
     </script>
 
 
@@ -57,24 +38,12 @@
 <body>
 <br>
 <br>
-<table><tr><td width="500" height="300">
-    <div class="zoom" ><video  id="video1" width="400" onclick="openFullscreen(video1);" >
-        <source src="../resurse/other/scoala.mp4" type="video/mp4"  > </video></div>
-</td><td height="300" width="500">
-    <div class="zoom" ><video  id="video2" width="400" onclick="openFullscreen(video2);">
-        <source src="../resurse/other/reguli%20la%20scoala.mp4" type="video/mp4"></video></div></td>
-</tr>
-</table>
-<table>
-    <tr height="300"><td  width="400"> <div class="zoom" ><video  id="video3" width="270" onclick="openFullscreen(video3);">
-        <source src="../resurse/other/noi%20suntem%20scolari.mp4" type="video/mp4"></video></div></td>
-        <td width="400"> <div class="zoom" ><video  id="video4" width="270" onclick="openFullscreen(video4);">
-            <source src="../resurse/other/noul%20an%20scolar.mp4" type="video/mp4"></video></div></td>
-        <td width="400"> <div class="zoom" ><video  id="video5" width="270" onclick="openFullscreen(video5);">
-            <source src="../resurse/other/de%20la%201%20pana%20la%2010.mp4" type="video/mp4"></video></div></td>
-    </tr>
-</table>
 <i class="fas fa-arrow-alt-circle-left" type="button" id="returnBtn" onclick="returnTo('../OpeningScreen/OpeningScreen.html')"></i>
+<center>
+    <video  id="video1" width="1000" height="600"  autoplay muted="true">
+        <source src="../resurse/other/invatare.mp4" type="video/mp4"  > </video>
+
+</center>
 </body>
 </html>
 <script  src="../js/all.js"></script>
