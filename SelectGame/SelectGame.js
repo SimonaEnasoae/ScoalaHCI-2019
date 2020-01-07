@@ -112,7 +112,7 @@ var currentSelected = 0;
 
 function speakerEvenListener(){
     var speakerSound = new Audio();
-    speakerSound.src = "../resurse/sounds/cerinta1.m4a";
+    speakerSound.src = "../resurse/sounds/cerintaSunetS1.m4a";
     speaker.addEventListener("click", () => {
         if(!speakerSound.pause()) speakerSound.play();
     });
@@ -145,7 +145,7 @@ function imagesOnClick(){
 function winEffect(){
     console.log("YOU WON");
     var sound = new Audio();
-    sound.src = "sounds/victoryGame.mp3";
+    sound.src = "../resurse/sounds/victoryGame.mp3";
     sound.play();
     for (var j = 0; j < doc.length; j++) {
         if (!isCorrect(doc[j])) {

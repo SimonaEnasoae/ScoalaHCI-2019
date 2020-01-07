@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamesScreen/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamesScreen/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/Kids Cheering - Gaming Sound Effect (HD).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/cerinta1.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/cerinta2.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/cerinta3.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/jocul cu labirint.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/sounds/jocul_cu_labirint.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/jocul cu perechi.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/sounds/jocul_cu_perechi.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resurse/sounds/jocul de ales oboecte.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/sounds/jocul_de_ales_obiecte.m4a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +46,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\scoala\An_3-Sem_1\ScoalaHCI-2019\resurse\scoala" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Main\Facultate\ComputerScience\HCI\Project" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\scoala\An_3-Sem_1\ScoalaHCI-2019\resurse\scoala" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,7 +99,7 @@
       <workItem from="1576184496249" duration="602000" />
       <workItem from="1577969720170" duration="1638000" />
       <workItem from="1578416008785" duration="4309000" />
-      <workItem from="1578422907852" duration="1412000" />
+      <workItem from="1578422907852" duration="4181000" />
     </task>
     <servers />
   </component>
