@@ -1,41 +1,41 @@
 var schoolImgs = [
-    {name: "acuarele", src: "scoala/acuarele.jpg", sound: "sounds/acuarele.m4a"},
-    {name: "birou", src: "scoala/birou.jpg", sound: "sounds/birou.m4a"},
-    {name: "caiet", src: "scoala/caiet.jpg", sound: "sounds/caiet.m4a"},
-    {name: "camasa", src: "scoala/camasa.jpg", sound: "sounds/camasa.m4a"},
-    {name: "carte", src: "scoala/carte.jpg", sound: "sounds/carte.m4a"},
-    {name: "creion", src: "scoala/creion.jpg", sound: "sounds/creion.m4a"},
-    {name: "creta", src: "scoala/creta.jpg", sound: "sounds/creta.m4a"},
-    {name: "foarfeca", src: "scoala/foarfeca.jpg", sound: "sounds/foarfeca.m4a"},
-    {name: "ghiozdan", src: "scoala/ghiozdan.jpg", sound: "sounds/ghiozdan.m4a"},
-    {name: "minge", src: "scoala/minge.jpg", sound: "sounds/minge.m4a"},
-    {name: "penar", src: "scoala/penar.jpg", sound: "sounds/penar.m4a"},
-    {name: "sacou", src: "scoala/sacou.jpg", sound: "sounds/sacou.m4a"},
-    {name: "saltea", src: "scoala/saltea.jpg", sound: "sounds/saltea.m4a"},
-    {name: "scaun", src: "scoala/scaun.jpg", sound: "sounds/sezlong.m4a"},
-    {name: "scoci", src: "scoala/scoci.jpg", sound: "sounds/scoci.m4a"},
-    {name: "socotitoare", src: "scoala/socotitoare.jpg", sound: "sounds/socotitoare.m4a"},
-    {name: "sonerie", src: "scoala/sonerie.jpg", sound: "sounds/sonerie.m4a"},
-    {name: "stilou", src: "scoala/stilou.jpg", sound: "sounds/stilou.m4a"},
-    {name: "tabla", src: "scoala/tabla2.jpg", sound: "sounds/tabla.m4a"}
+    {name: "acuarele", src: "../resurse/scoala/acuarele.jpg", sound: "../resurse/sounds/acuarele.m4a"},
+    {name: "birou", src: "../resurse/scoala/birou.jpg", sound: "../resurse/sounds/birou.m4a"},
+    {name: "caiet", src: "../resurse/scoala/caiet.jpg", sound: "../resurse/sounds/caiet.m4a"},
+    {name: "camasa", src: "../resurse/scoala/camasa.jpg", sound: "../resurse/sounds/camasa.m4a"},
+    {name: "carte", src: "../resurse/scoala/carte.jpg", sound: "../resurse/sounds/carte.m4a"},
+    {name: "creion", src: "../resurse/scoala/creion.jpg", sound: "../resurse/sounds/creion.m4a"},
+    {name: "creta", src: "../resurse/scoala/creta.jpg", sound: "../resurse/sounds/creta.m4a"},
+    {name: "foarfeca", src: "../resurse/scoala/foarfeca.jpg", sound: "../resurse/sounds/foarfeca.m4a"},
+    {name: "ghiozdan", src: "../resurse/scoala/ghiozdan.jpg", sound: "../resurse/sounds/ghiozdan.m4a"},
+    {name: "minge", src: "../resurse/scoala/minge.jpg", sound: "../resurse/sounds/minge.m4a"},
+    {name: "penar", src: "../resurse/scoala/penar.jpg", sound: "../resurse/sounds/penar.m4a"},
+    {name: "sacou", src: "../resurse/scoala/sacou.jpg", sound: "../resurse/sounds/sacou.m4a"},
+    {name: "saltea", src: "../resurse/scoala/saltea.jpg", sound: "../resurse/sounds/saltea.m4a"},
+    {name: "scaun", src: "../resurse/scoala/scaun.jpg", sound: "../resurse/sounds/scaun.m4a"},
+    {name: "scoci", src: "../resurse/scoala/scoci.jpg", sound: "../resurse/sounds/scoci.m4a"},
+    {name: "socotitoare", src: "../resurse/scoala/socotitoare.jpg", sound: "../resurse/sounds/socotitoare.m4a"},
+    {name: "sonerie", src: "../resurse/scoala/sonerie.jpg", sound: "../resurse/sounds/sonerie.m4a"},
+    {name: "stilou", src: "../resurse/scoala/stilou.jpg", sound: "../resurse/sounds/stilou.m4a"},
+    {name: "tabla", src: "../resurse/scoala/tabla2.jpg", sound: "../resurse/sounds/tabla.m4a"}
 ];
 
 var nonSchoolImgs = [
-    {name: "farfurie", src: "non-scoala/farfurie.jpg", sound: "sounds/farfurie.m4a"},
-    {name: "frigider", src: "non-scoala/frigider.jpg", sound: "sounds/frigider.m4a"},
-    {name: "lac_unghii", src: "non-scoala/lac_unghii.jpg", sound: "sounds/lac_de_unghii.m4a"},
-    {name: "masinuta", src: "non-scoala/masinuta.jpg", sound: "sounds/masinuta.m4a"},
-    {name: "mixer", src: "non-scoala/mixer.jpg", sound: "sounds/mixer.m4a"},
-    {name: "papusa", src: "non-scoala/papusa.jpg", sound: "sounds/papusa.m4a"},
-    {name: "pasta_de_dinti", src: "non-scoala/pasta_de_dinti.jpg", sound: "sounds/pasta_de_dinti.m4a"},
-    {name: "pat", src: "non-scoala/pat.jpg", sound: "sounds/pat.m4a"},
-    {name: "perna", src: "non-scoala/perna.jpg", sound: "sounds/perna.m4a"},
-    {name: "pijama", src: "non-scoala/pijama.jpg", sound: "sounds/pijamale.m4a"},
-    {name: "robot", src: "non-scoala/robot.jpg", sound: "sounds/robot.m4a"},
-    {name: "sampon", src: "non-scoala/sampon.jpg", sound: "sounds/sampon.m4a"},
-    {name: "sezlong", src: "non-scoala/sezlong.jpg", sound: "sounds/sezlong.m4a"},
-    {name: "televizor", src: "non-scoala/televizor.jpg", sound: "sounds/televizor.m4a"},
-    {name: "uscator_par", src: "non-scoala/uscator_par.jpg", sound: "sounds/uscator_de_par.m4a"}
+    {name: "farfurie", src: "../resurse/non-scoala/farfurie.jpg", sound: "../resurse/sounds/farfurie.m4a"},
+    {name: "frigider", src: "../resurse/non-scoala/frigider.jpg", sound: "../resurse/sounds/frigider.m4a"},
+    {name: "lac_unghii", src: "../resurse/non-scoala/lac_unghii.jpg", sound: "../resurse/sounds/lac_de_unghii.m4a"},
+    {name: "masinuta", src: "../resurse/non-scoala/masinuta.jpg", sound: "../resurse/sounds/masinuta.m4a"},
+    {name: "mixer", src: "../resurse/non-scoala/mixer.jpg", sound: "../resurse/sounds/mixer.m4a"},
+    {name: "papusa", src: "../resurse/non-scoala/papusa.jpg", sound: "../resurse/sounds/papusa.m4a"},
+    {name: "pasta_de_dinti", src: "../resurse/non-scoala/pasta_de_dinti.jpg", sound: "../resurse/sounds/pasta_de_dinti.m4a"},
+    {name: "pat", src: "../resurse/non-scoala/pat.jpg", sound: "../resurse/sounds/pat.m4a"},
+    {name: "perna", src: "../resurse/non-scoala/perna.jpg", sound: "../resurse/sounds/perna.m4a"},
+    {name: "pijama", src: "../resurse/non-scoala/pijama.jpg", sound: "../resurse/sounds/pijamale.m4a"},
+    {name: "robot", src: "../resurse/non-scoala/robot.jpg", sound: "../resurse/sounds/robot.m4a"},
+    {name: "sampon", src: "../resurse/non-scoala/sampon.jpg", sound: "../resurse/sounds/sampon.m4a"},
+    {name: "sezlong", src: "../resurse/non-scoala/sezlong.jpg", sound: "../resurse/sounds/sezlong.m4a"},
+    {name: "televizor", src: "../resurse/non-scoala/televizor.jpg", sound: "../resurse/sounds/televizor.m4a"},
+    {name: "uscator_par", src: "../resurse/non-scoala/uscator_par.jpg", sound: "../resurse/sounds/uscator_de_par.m4a"}
 ];
 
 var rows = ["firstRow", "secondRow", "thirdRow"];
@@ -112,7 +112,7 @@ var currentSelected = 0;
 
 function speakerEvenListener(){
     var speakerSound = new Audio();
-    speakerSound.src = "sounds/cerinta1.m4a";
+    speakerSound.src = "../resurse/sounds/cerinta1.m4a";
     speaker.addEventListener("click", () => {
         if(!speakerSound.pause()) speakerSound.play();
     });
