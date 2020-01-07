@@ -105,16 +105,17 @@ function main() {
 main();
 
 var doc = document.getElementById("container").getElementsByTagName("img");
-var speaker = document.getElementById("speaker");
 var currentCorrect = 0;
 var currentSelected = 0;
 
 
-function speakerEvenListener(){
+function speakerEventListener(){
+    var speaker = document.getElementById("speaker");
     var speakerSound = new Audio();
+    var sample = document.getElementById("foobar");
     speakerSound.src = "../resurse/sounds/cerintaSunetS1.m4a";
     speaker.addEventListener("click", () => {
-        if(!speakerSound.pause()) speakerSound.play();
+        if(speakerSound.paused && sample.paused) speakerSound.play();
     });
 }
 function imagesOnClick(){
@@ -188,11 +189,11 @@ function imagesUnclickable(){
     }
 }
 
-
-speakerEvenListener();
+playAuto();
+speakerEventListener();
 imagesEventListener();
 imagesOnClick();
-playAuto();
+
 
 
 

@@ -133,6 +133,8 @@ select:focus {
   animation: Gradient 15s ease infinite;
 }
 
+#foobar { display: none }
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;

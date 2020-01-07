@@ -18,6 +18,7 @@ body {
     flex-wrap: wrap;
     perspective: 1000px;
 }
+#foobar { display: none }
 
 .memory-card {
     width: calc(25% - 10px);

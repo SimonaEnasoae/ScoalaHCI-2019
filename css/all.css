@@ -11,3 +11,14 @@
 }
 
 
+#speaker {
+    position: absolute;
+    cursor: pointer;
+    width: 10%;
+    height: auto;
+    top: 20%;
+    margin-left: 10px;
+
+}
+
+

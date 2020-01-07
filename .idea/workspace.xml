@@ -3,17 +3,99 @@
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamesScreen/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamesScreen/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/Kids Cheering - Gaming Sound Effect (HD).mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/cerinta1.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/cerinta2.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/cerinta3.m4a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/jocul cu labirint.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/sounds/jocul_cu_labirint.m4a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/jocul cu perechi.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/sounds/jocul_cu_perechi.m4a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resurse/sounds/jocul de ales oboecte.m4a" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/sounds/jocul_de_ales_obiecte.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/icons/buttons.png" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/icons/buttons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/icons/speaker.png" beforeDir="false" afterPath="$PROJECT_DIR$/resurse/icons/speaker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/SelectGame.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/icons/buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/icons/speaker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/farfurie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/frigider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/lac_unghii.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/masinuta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/mixer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/papusa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/pasta_de_dinti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/pat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/perna.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/pijama.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/robot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/sampon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/sezlong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/televizor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/non-scoala/uscator_par.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/acuarele.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/birou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/caiet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/camasa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/carte.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/creion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/creta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/foarfeca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/ghiozdan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/minge.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/penar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/sacou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/saltea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/scaun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/scoci.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/socotitoare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/sonerie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/stilou.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/scoala/tabla2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/acuarele.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/birou.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/caiet.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/camasa.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/carte.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/cerinta1.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/cerinta2.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/cerinta3.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/creion.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/creta.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/farfurie.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/foarfeca.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/frigider.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/ghiozdan.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/lac_de_unghii.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/maiIncearca1.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/masinuta.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/minge.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/mixer.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/ne jucăm.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/papusa.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/pasta de dinti.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/pat.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/penar.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/perna.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/pijamale.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/robot.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/sacou.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/saltea.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/sală.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/sampon.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/scoci.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/sezlong.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/socotitoare.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/sonerie.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/stilou.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/tabla.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/televizor.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/uscator de par.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/victoryGame.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/sounds/învăţăm.m4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/trash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRASH/trash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/all.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +128,12 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Main\Facultate\ComputerScience\HCI\Project\resurse" />
+      <recent name="F:\scoala\An_3-Sem_1\ScoalaHCI-2019\resurse\scoala" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Main\Facultate\ComputerScience\HCI\Project" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\scoala\An_3-Sem_1\ScoalaHCI-2019\resurse\scoala" />
     </key>
   </component>
   <component name="RunManager">
@@ -100,6 +183,7 @@
       <workItem from="1577969720170" duration="1638000" />
       <workItem from="1578416008785" duration="4309000" />
       <workItem from="1578422907852" duration="4181000" />
+      <workItem from="1578433063983" duration="4319000" />
     </task>
     <servers />
   </component>

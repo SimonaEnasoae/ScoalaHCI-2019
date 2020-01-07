@@ -76,3 +76,22 @@ function myFunction(){
     window.location.assign("memoryGame.html");
 }
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+function playAuto(){
+    var sample = document.getElementById("foobar");
+    sample.play();
+}
+
+playAuto();
+
+function speakerEventListener(){
+    var speaker = document.getElementById("speaker");
+    var speakerSound = new Audio();
+    var sample = document.getElementById("foobar");
+    speakerSound.src = "../resurse/sounds/cerintaPerechi.m4a";
+    speaker.addEventListener("click", () => {
+        if(speakerSound.paused && sample.paused) speakerSound.play();
+    });
+}
+
+speakerEventListener();

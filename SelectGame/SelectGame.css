@@ -39,14 +39,6 @@ body{
     transform: scale(1.2);
 }
 
-#speaker {
-    position: absolute;
-    cursor: pointer;
-    width: 10%;
-    height: auto;
-    top: 20px;
-    margin-left: 30px;
-}
 
 #foobar { display: none }
 

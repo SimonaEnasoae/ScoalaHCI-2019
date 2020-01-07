@@ -34,6 +34,7 @@ function changeBrightness(factor, sprite) {
 
 function displayVictoryMess() {
     toggleVisablity("Message-Container");
+    winEffect();
 }
 
 function toggleVisablity(id) {
@@ -548,3 +549,26 @@ function makeMaze() {
         document.getElementById("mazeContainer").style.opacity = "100";
     }
 }
+
+function speakerEventListener(){
+    var speaker = document.getElementById("speaker");
+    var speakerSound = new Audio();
+    var sample = document.getElementById("foobar");
+    speakerSound.src = "../resurse/sounds/cerintaMaze.m4a";
+    speaker.addEventListener("click", () => {
+        if(speakerSound.paused && sample.paused) speakerSound.play();
+    });
+}
+function playAuto(){
+    var sample = document.getElementById("foobar");
+    sample.play();
+}
+
+function winEffect(){
+    console.log("YOU WON");
+    var sound = new Audio();
+    sound.src = "../resurse/sounds/victoryGame.mp3";
+    sound.play();
+}
+playAuto();
+speakerEventListener();
