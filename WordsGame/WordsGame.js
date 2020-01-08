@@ -24,7 +24,7 @@ var wrongImgs = [
 ];
 
 var rows = ["firstRow", "secondRow", "thirdRow"];
-var options = [4,5,6];
+var options = [3,4, 5];
 var imgPerRow = 4;
 var nrCorrectImgs = options[Math.floor(Math.random() * options.length)];
 var nrWrongImgs = 12 - nrCorrectImgs;
