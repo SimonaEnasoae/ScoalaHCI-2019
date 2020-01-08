@@ -193,16 +193,17 @@ function imagesEventListener(){
     }
 }
 
+var soundFail = new Audio();
+soundFail.src = "../resurse/sounds/maiIncearca1.m4a";
+
 function hiddenImagesOnClick(){
     for (var i = 0; i < hiddenDoc.length; i++) {
         hiddenDoc[i].addEventListener('click', function () {
             if (Number(this.id) === doc.length){
                 secondWinEffect();
             }else{
-                var sound = new Audio();
-                sound.src = "../resurse/sounds/maiIncearca1.m4a";
-                sound.play();
 
+                if(soundFail.paused)  soundFail.play();
             }
 
         });
