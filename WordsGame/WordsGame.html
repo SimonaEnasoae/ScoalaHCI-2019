@@ -14,9 +14,22 @@
     <div class="row" id="secondRow"></div>
     <div class="row" id="thirdRow"></div>
 </div>
-<img class="button" src="../resurse/icons/speaker.png" id="speaker" alt=""/>
+<div id="list">
+    <img src="../resurse/numbers/3.png" id = 3 alt="" class="imgHidden">
+    <img src="../resurse/numbers/4.png" id = 4 alt="" class="imgHidden">
+    <img src="../resurse/numbers/5.png" id = 5 alt="" class="imgHidden">
+
+</div>
+<img class="button" src="../resurse/icons/speaker.png" id="speaker" alt="../resurse/sounds/cerintaSunetS2.m4a"/>
 <i class="fas fa-arrow-alt-circle-left" type="button" id="returnBtn" onclick="returnTo('../GamesScreen/games.html')"></i>
 <audio id="foobar" src="../resurse/sounds/cerintaSunetS2.m4a" preload="auto"></audio>
+
+<div id="Message-Container">
+    <div id="message">
+        <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container');returnTo('../SelectGame/SelectGame.html');" class="myButton">
+    </div>
+</div>
+
 </body>
 <script src="WordsGame.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -23,8 +23,14 @@ var wrongImgs = [
     {name: "tabla", src: "../resurse/scoala/tabla2.jpg", sound: "../resurse/sounds/tabla.m4a"}
 ];
 
+var numberImgs = [
+    {name: 3, src: "../resurse/numbers/3.png"},
+    {name: 4, src: "../resurse/numbers/4"},
+    {name: 5, src: "../resurse/numbers/5"}
+];
+
 var rows = ["firstRow", "secondRow", "thirdRow"];
-var options = [3,4, 5];
+var options = [3,4,5];
 var imgPerRow = 4;
 var nrCorrectImgs = options[Math.floor(Math.random() * options.length)];
 var nrWrongImgs = 12 - nrCorrectImgs;
@@ -46,7 +52,6 @@ function getRandomImage(fromArray, toTarget, usedImages, usedImagesCount) {
         getRandomImage(fromArray, toTarget, usedImages, usedImagesCount);
     }
 }
-
 function generateImages(targetArray, nrOfImages) {
     var usedImages = [];
     var usedImagesCount = 0;
@@ -70,11 +75,7 @@ function shuffle(array) {
     }
     return array;
 }
-
-function addImages() {
-    var correctImages = generateImages(correctImgs, nrCorrectImgs);
-    var wrongImgages = generateImages(wrongImgs, nrWrongImgs);
-    var result = shuffle(correctImages.concat(wrongImgages));
+function addImages(result) {
     var k = 0;
     for (var i = 0; i < rows.length; i++) {
         var div = document.getElementById(rows[i]);
@@ -84,25 +85,29 @@ function addImages() {
         }
     }
 } //concatenates 2 arrays of correct and incorrect Images, shuffles and display them
-
 function main() {
-    addImages();
+    var correctImages = generateImages(correctImgs, nrCorrectImgs);
+    var wrongImages = generateImages(wrongImgs, nrWrongImgs);
+    var result = shuffle(correctImages.concat(wrongImages));
+    addImages(result);
 }
 
 main();
 
 var doc = document.getElementById("container").getElementsByTagName("img");
+var hiddenDoc = document.getElementById("list").getElementsByTagName("img");
 var currentCorrect = 0;
 var currentSelected = 0;
 
+var currentSrc = "../resurse/sounds/cerintaSunetS2.m4a";
+var currentSound = new Audio();
+currentSound.src = currentSrc;
 
 function speakerEventListener(){
     var speaker = document.getElementById("speaker");
-    var speakerSound = new Audio();
     var sample = document.getElementById("foobar");
-    speakerSound.src = "../resurse/sounds/cerintaSunetS2.m4a";
     speaker.addEventListener("click", () => {
-        if(speakerSound.paused && sample.paused) speakerSound.play();
+        if(currentSound.paused && sample.paused) currentSound.play();
     });
 }
 function imagesOnClick(){
@@ -131,18 +136,41 @@ function imagesOnClick(){
     }
 }
 function winEffect(){
+    var list = document.getElementById("list");
+    list.style.display = 'block';
     console.log("YOU WON");
     var sound = new Audio();
     sound.src = "../resurse/sounds/victoryGame.mp3";
     sound.play();
+    var correctImages = [];
+
     for (var j = 0; j < doc.length; j++) {
-        if (!isCorrect(doc[j])) {
-            doc[j].style.visibility = 'hidden';
-        }else{
-            doc[j].style.opacity = '1';
+        if (isCorrect(doc[j])) {
+            correctImages.push(doc[j]);
         }
+
     }
-    imagesUnclickable();
+    document.getElementById("container").style.cursor = 'default';
+    document.getElementById("imgBox").style.cursor = 'default';
+
+    removeImages();
+    hiddenImagesOnClick();
+    leaveCorrectImages(correctImages);
+    currentSound.src = "../resurse/sounds/cerintaSunetS3.m4a";
+}
+
+
+function leaveCorrectImages(result){
+    var div = document.getElementById("firstRow");
+    for (var j = 0; j < result.length; j++) {
+        var image = result[j];
+        div.innerHTML += "<div class=\"box\"><div class=\"imgBox\" id=\"imgBox\"><img src=\"" + image.src + '\"' + ' id=\"' + image.id + '\" ' + "alt=\"" + image.alt + '\"' + "></div></div>";
+    }
+}
+function removeImages(){
+    var docs = document.getElementsByClassName("box");
+    for (var i= docs.length; i-->0;)
+       docs[i].parentNode.removeChild(docs[i]);
 }
 function imagesEventListener(){
     var sound = new Audio();
@@ -156,6 +184,32 @@ function imagesEventListener(){
             sound.currentTime = 0;
         })
     }
+}
+
+function hiddenImagesOnClick(){
+    for (var i = 0; i < hiddenDoc.length; i++) {
+        hiddenDoc[i].addEventListener('click', function () {
+            if (Number(this.id) === doc.length){
+                secondWinEffect();
+            }else{
+                var sound = new Audio();
+                sound.src = "../resurse/sounds/maiIncearca1.m4a";
+                sound.play();
+
+            }
+
+        });
+    }
+}
+
+function secondWinEffect(){
+    var sound = new Audio();
+    sound.src = "../resurse/sounds/victoryGame.mp3";
+    sound.play();
+
+    toggleVisablity("Message-Container");
+
+
 }
 function isCorrect(image) {
     return image.id.charAt(0).toLowerCase() === 's';
@@ -179,6 +233,14 @@ function playAuto(){
 function imagesUnclickable(){
     for (var i = 0; i < doc.length; i++){
         doc[i].style.pointerEvents = "none";
+    }
+}
+
+function toggleVisablity(id) {
+    if (document.getElementById(id).style.visibility === "visible") {
+        document.getElementById(id).style.visibility = "hidden";
+    } else {
+        document.getElementById(id).style.visibility = "visible";
     }
 }
 
