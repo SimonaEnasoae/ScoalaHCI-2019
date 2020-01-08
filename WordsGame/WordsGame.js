@@ -1,4 +1,14 @@
-var schoolImgs = [
+var correctImgs = [
+    {name: "sacou", src: "../resurse/scoala/sacou.jpg", sound: "../resurse/sounds/sacou.m4a"},
+    {name: "saltea", src: "../resurse/scoala/saltea.jpg", sound: "../resurse/sounds/saltea.m4a"},
+    {name: "scaun", src: "../resurse/scoala/scaun.jpg", sound: "../resurse/sounds/scaun.m4a"},
+    {name: "scoci", src: "../resurse/scoala/scoci.jpg", sound: "../resurse/sounds/scoci.m4a"},
+    {name: "socotitoare", src: "../resurse/scoala/socotitoare.jpg", sound: "../resurse/sounds/socotitoare.m4a"},
+    {name: "sonerie", src: "../resurse/scoala/sonerie.jpg", sound: "../resurse/sounds/sonerie.m4a"},
+    {name: "stilou", src: "../resurse/scoala/stilou.jpg", sound: "../resurse/sounds/stilou.m4a"}
+];
+
+var wrongImgs = [
     {name: "acuarele", src: "../resurse/scoala/acuarele.jpg", sound: "../resurse/sounds/acuarele.m4a"},
     {name: "birou", src: "../resurse/scoala/birou.jpg", sound: "../resurse/sounds/banca.m4a"},
     {name: "caiet", src: "../resurse/scoala/caiet.jpg", sound: "../resurse/sounds/caiet.m4a"},
@@ -10,53 +20,30 @@ var schoolImgs = [
     {name: "ghiozdan", src: "../resurse/scoala/ghiozdan.jpg", sound: "../resurse/sounds/ghiozdan.m4a"},
     {name: "minge", src: "../resurse/scoala/minge.jpg", sound: "../resurse/sounds/minge.m4a"},
     {name: "penar", src: "../resurse/scoala/penar.jpg", sound: "../resurse/sounds/penar.m4a"},
-    {name: "sacou", src: "../resurse/scoala/sacou.jpg", sound: "../resurse/sounds/sacou.m4a"},
-    {name: "saltea", src: "../resurse/scoala/saltea.jpg", sound: "../resurse/sounds/saltea.m4a"},
-    {name: "scaun", src: "../resurse/scoala/scaun.jpg", sound: "../resurse/sounds/scaun.m4a"},
-    {name: "scoci", src: "../resurse/scoala/scoci.jpg", sound: "../resurse/sounds/scoci.m4a"},
-    {name: "socotitoare", src: "../resurse/scoala/socotitoare.jpg", sound: "../resurse/sounds/socotitoare.m4a"},
-    {name: "sonerie", src: "../resurse/scoala/sonerie.jpg", sound: "../resurse/sounds/sonerie.m4a"},
-    {name: "stilou", src: "../resurse/scoala/stilou.jpg", sound: "../resurse/sounds/stilou.m4a"},
     {name: "tabla", src: "../resurse/scoala/tabla2.jpg", sound: "../resurse/sounds/tabla.m4a"}
 ];
 
-var nonSchoolImgs = [
-    {name: "farfurie", src: "../resurse/non-scoala/farfurie.jpg", sound: "../resurse/sounds/farfurie.m4a"},
-    {name: "frigider", src: "../resurse/non-scoala/frigider.jpg", sound: "../resurse/sounds/frigider.m4a"},
-    {name: "lac_unghii", src: "../resurse/non-scoala/lac_unghii.jpg", sound: "../resurse/sounds/lac_de_unghii.m4a"},
-    {name: "masinuta", src: "../resurse/non-scoala/masinuta.jpg", sound: "../resurse/sounds/masinuta.m4a"},
-    {name: "mixer", src: "../resurse/non-scoala/mixer.jpg", sound: "../resurse/sounds/mixer.m4a"},
-    {name: "papusa", src: "../resurse/non-scoala/papusa.jpg", sound: "../resurse/sounds/papusa.m4a"},
-    {name: "pasta_de_dinti", src: "../resurse/non-scoala/pasta_de_dinti.jpg", sound: "../resurse/sounds/pasta_de_dinti.m4a"},
-    {name: "pat", src: "../resurse/non-scoala/pat.jpg", sound: "../resurse/sounds/pat.m4a"},
-    {name: "perna", src: "../resurse/non-scoala/perna.jpg", sound: "../resurse/sounds/perna.m4a"},
-    {name: "pijama", src: "../resurse/non-scoala/pijama.jpg", sound: "../resurse/sounds/pijamale.m4a"},
-    {name: "robot", src: "../resurse/non-scoala/robot.jpg", sound: "../resurse/sounds/robot.m4a"},
-    {name: "șampon", src: "../resurse/non-scoala/sampon.jpg", sound: "../resurse/sounds/sampon.m4a"},
-    {name: "șezlong", src: "../resurse/non-scoala/sezlong.jpg", sound: "../resurse/sounds/sezlong.m4a"},
-    {name: "televizor", src: "../resurse/non-scoala/televizor.jpg", sound: "../resurse/sounds/televizor.m4a"},
-    {name: "uscator_par", src: "../resurse/non-scoala/uscator_par.jpg", sound: "../resurse/sounds/uscator_de_par.m4a"}
-];
-
 var rows = ["firstRow", "secondRow", "thirdRow"];
+var options = [4,5,6];
 var imgPerRow = 4;
-var nrCorrectImgs = 8;
-var nrIncorrectImgs = 4;
-var totalImagesDisplayed = nrCorrectImgs + nrIncorrectImgs;
+var nrCorrectImgs = options[Math.floor(Math.random() * options.length)];
+var nrWrongImgs = 12 - nrCorrectImgs;
 
+console.log("Correct: " + nrCorrectImgs);
+console.log("Wrong: " + nrWrongImgs);
 
-function getRandomImage(fromArr, toTarget, usedImages, usedImagesCount) {
-    var num = Math.floor(Math.random() * (fromArr.length));
+function getRandomImage(fromArray, toTarget, usedImages, usedImagesCount) {
+    var num = Math.floor(Math.random() * (fromArray.length));
     if (!usedImages[num]) {
-        toTarget.push(fromArr[num]);
+        toTarget.push(fromArray[num]);
         usedImages[num] = true;
         usedImagesCount++;
-        if (usedImagesCount === fromArr.length) {
+        if (usedImagesCount === fromArray.length) {
             usedImagesCount = 0;
             usedImages = [];
         }
     } else {
-        getRandomImage(fromArr, toTarget, usedImages, usedImagesCount);
+        getRandomImage(fromArray, toTarget, usedImages, usedImagesCount);
     }
 }
 
@@ -85,9 +72,9 @@ function shuffle(array) {
 }
 
 function addImages() {
-    var correctImgs = generateImages(schoolImgs, nrCorrectImgs);
-    var incorrectImgs = generateImages(nonSchoolImgs, nrIncorrectImgs);
-    var result = shuffle(correctImgs.concat(incorrectImgs));
+    var correctImages = generateImages(correctImgs, nrCorrectImgs);
+    var wrongImgages = generateImages(wrongImgs, nrWrongImgs);
+    var result = shuffle(correctImages.concat(wrongImgages));
     var k = 0;
     for (var i = 0; i < rows.length; i++) {
         var div = document.getElementById(rows[i]);
