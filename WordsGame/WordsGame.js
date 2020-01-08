@@ -156,6 +156,13 @@ function winEffect(){
     removeImages();
     hiddenImagesOnClick();
     leaveCorrectImages(correctImages);
+    setTimeout(function()
+    {
+        var speakerSound = new Audio();
+        speakerSound.src = "../resurse/sounds/cerintaSunetS3.m4a";
+        speakerSound.play();
+
+    }, 3000);
     currentSound.src = "../resurse/sounds/cerintaSunetS3.m4a";
 }
 
@@ -206,6 +213,7 @@ function secondWinEffect(){
     var sound = new Audio();
     sound.src = "../resurse/sounds/victoryGame.mp3";
     sound.play();
+
 
     toggleVisablity("Message-Container");
 
