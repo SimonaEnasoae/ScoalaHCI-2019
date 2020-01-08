@@ -20,6 +20,30 @@ body {
 }
 #foobar { display: none }
 
+#Message-Container {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    margin:0 auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+#message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
 .memory-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -85,4 +109,31 @@ body {
     position:absolute;
     top:1px;
 }
+.myButton {
+    /*background-color:transparent;*/
+    border-radius:530px;
+    /*border:1px solid #18ab29;*/
+    /*display:inline-block;*/
+    background: url("../resurse/other/green.png");
+    background-size: 100%;
+    margin-top: 100px;
+    margin-left: 100px;
+    cursor:pointer;
+    color:#ffffff;
+    width: 150px;
+    height: 150px;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    /*text-shadow:0px 1px 0px #2f6627;*/
+}
+.myButton:hover {
+    /*background-color:#5cbf2a;*/
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
 

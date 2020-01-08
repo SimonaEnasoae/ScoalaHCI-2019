@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     <title>Perechi</title>
-    <link rel="stylesheet" href="memoryGame.css">
+    <link rel="stylesheet" href="./memoryGame.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../fontawesome/css/all.css">
 
@@ -70,8 +70,15 @@
 <img class="button" src="../resurse/icons/speaker.png" id="speaker" alt=""/>
 <audio id="foobar" src="../resurse/sounds/cerintaPerechi.m4a" preload="auto"></audio>
 
+<div id="Message-Container">
+    <div id="message">
+        <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container');returnTo('../MemoryGame/memoryGame.html');" class="myButton">
+    </div>
+</div>
+
 
 <script src="memoryGame.js"></script>
 <script  src="../js/all.js"></script>
+
 </body>
 </html>
