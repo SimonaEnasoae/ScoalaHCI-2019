@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-
+let numberValidPairs=0;
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -27,6 +27,18 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
     let end =checkForEnd();
     if(end===true){
+        numberValidPairs = 0;
+        toggleVisablity("Message-Container");
+        var sound = new Audio();
+        sound.src = "../resurse/sounds/victoryGame.mp3";
+        sound.play();
+        setTimeout(function()
+        {
+            var speakerSound = new Audio();
+            speakerSound.src = "../resurse/sounds/6 perechi.m4a";
+            speakerSound.play();
+
+        }, 3000);
         document.getElementById("myBtn").style.visibility= 'visible' ;
     }
     console.log(end);
@@ -44,6 +56,10 @@ function hasClass(element, className) {
     return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
 }
 function disableCards() {
+    numberValidPairs += 1;
+    var speakerSound = new Audio();
+    speakerSound.src = "../resurse/sounds/"+numberValidPairs.toString()+" perechi.m4a";
+    if(speakerSound.paused && numberValidPairs<=5) speakerSound.play();
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 
@@ -93,5 +109,11 @@ function speakerEventListener(){
         if(speakerSound.paused && sample.paused) speakerSound.play();
     });
 }
-
+function toggleVisablity(id) {
+    if (document.getElementById(id).style.visibility === "visible") {
+        document.getElementById(id).style.visibility = "hidden";
+    } else {
+        document.getElementById(id).style.visibility = "visible";
+    }
+}
 speakerEventListener();
