@@ -156,6 +156,8 @@ function winEffect(){
         }
     }
     imagesUnclickable();
+    var nextBtn = document.getElementById("nextBtn");
+    nextBtn.style.display = 'block';
 }
 function imagesEventListener(){
     var sound = new Audio();

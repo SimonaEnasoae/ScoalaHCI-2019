@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamesScreen/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/GamesScreen/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearningScreen/learning.html" beforeDir="false" afterPath="$PROJECT_DIR$/LearningScreen/learning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MemoryGame/memoryGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/MemoryGame/memoryGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordsGame/WordsGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/WordsGame/WordsGame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -29,6 +36,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -94,6 +102,7 @@
       <workItem from="1578422907852" duration="4181000" />
       <workItem from="1578433063983" duration="6500000" />
       <workItem from="1578466186690" duration="1915000" />
+      <workItem from="1578490863457" duration="3064000" />
     </task>
     <servers />
   </component>
@@ -114,5 +123,9 @@
     </state>
     <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1574772785307" />
     <state x="571" y="160" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1575404330654" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1578493563299">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1578493563299" />
   </component>
 </project>
