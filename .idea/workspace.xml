@@ -3,16 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d0b717c3-bd88-42e9-a80b-b733aabff16d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SelectGame/SelectGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/SelectGame/SelectGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsGame/WordsGame.css" beforeDir="false" afterPath="$PROJECT_DIR$/WordsGame/WordsGame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordsGame/WordsGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/WordsGame/WordsGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeGame/MazeGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/MazeGame/MazeGame.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Project" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +99,7 @@
       <workItem from="1578433063983" duration="6500000" />
       <workItem from="1578466186690" duration="1915000" />
       <workItem from="1578490863457" duration="8138000" />
-      <workItem from="1578509008687" duration="355000" />
+      <workItem from="1578509008687" duration="3918000" />
     </task>
     <servers />
   </component>
@@ -125,6 +124,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="590" y="140" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1578505109138" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1578512368991">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1578512368991" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1578504084534">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
