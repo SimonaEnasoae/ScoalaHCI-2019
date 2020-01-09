@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Școala</title>
+    <style>
+        body{
+            background-image:url("../resurse/other/school_bg.png");
+        //background-repeat:no-repeat;
+        background-size:1400px 750px;}
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            padding: 50px;
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2);
+        }
+
+        </style>
+
+     <script type="text/javascript">
+         var learn="../LearningScreen/learning.html";
+    var practice="../GamesScreen/games.html";
+    function openOnImageClick(page)
+    {window.location.assign(page); return false;
+    }
+    function PlaySound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.play();
+    }
+
+    function StopSound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.pause();
+        thissound.currentTime = 0;
+    }</script>
+</head>
+<body>
+<audio id='mySound'><source src='../resurse/sounds/învăţăm.m4a'></audio>
+<audio id='mySound2'><source src='../resurse/sounds/ne_jucăm.m4a'></audio>
+<br>
+<br>
+</table>
+<table><tr><td  width="300" width="500" >
+    <div class="zoom" ><img src="../resurse/other/minion.png" width="300" height="350" onclick="openOnImageClick(learn)"  onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/>
+      </div>
+<!--<td/><td width="100"></td><td height="500" width="700">-->
+<!--    <div class="zoom" ><img src="../resurse/other/bus1.png" width="500" height="350" onclick="openOnImageClick(practice)" onmouseover="PlaySound('mySound2')" onmouseout="StopSound('mySound2')"/></div>-->
+<!--</td>-->
+</tr>
+</table>
+</body>
+</html>
+</body>
+</html>
