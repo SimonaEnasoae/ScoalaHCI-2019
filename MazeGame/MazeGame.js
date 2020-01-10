@@ -576,3 +576,4 @@ function winEffect(){
 }
 playAuto();
 speakerEventListener();
+

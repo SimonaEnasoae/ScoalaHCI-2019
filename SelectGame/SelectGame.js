@@ -93,7 +93,8 @@ function addImages() {
         var div = document.getElementById(rows[i]);
         for (var j = 0; j < imgPerRow; j++) {
             var image = result[k++];
-            div.innerHTML += "<div class=\"box\"><div class=\"imgBox\" id=\"imgBox\"><img src=\"" + image.src + '\"' + ' id=\"' + image.name + '\" ' + "alt=\"" + image.sound + '\"' + "></div></div>";
+            div.innerHTML += "<div class=\"box\"><div class=\"imgBox\" id=\"imgBox\"><img src=\"" + image.src + '\"' +
+                ' id=\"' + image.name + '\" ' + "alt=\"" + image.sound + '\"' + ">"+ "<div class=\"overlay\" id=\"overlay\"></div></div>";
         }
     }
 } //concatenates 2 arrays of correct and incorrect Images, shuffles and display them
@@ -122,11 +123,16 @@ function imagesOnClick(){
     for (var i = 0; i < doc.length; i++) {
         doc[i].addEventListener('click', function () {
             this.classList.toggle("select");
+            var box = this.parentElement.parentElement;
+            var imgBox = this.parentElement;
             if (this.classList.contains("select")) {
-                this.style.opacity = "0.6";
+                box.style.border = '4px solid #00ff0e';
+                box.style.overflow = 'hidden';
+                imgBox.getElementsByClassName('overlay')[0].classList.toggle('shadow');
                 currentSelected++;
             } else {
-                this.style.opacity = "1";
+                box.style.removeProperty('border');
+                imgBox.getElementsByClassName('overlay')[0].classList.toggle('shadow');
                 currentSelected--;
             }
 
