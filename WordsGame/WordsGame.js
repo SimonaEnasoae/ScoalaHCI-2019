@@ -112,8 +112,17 @@ function speakerEventListener(){
     });
 }
 function imagesOnClick(){
+    var acceptSound = new Audio();
+    acceptSound.src = "../resurse/sounds/CorrectAnswer.mp3";
+    var denySound = new Audio();
+    denySound.src = "../resurse/sounds/maiIncearca1.m4a";
     for (var i = 0; i < doc.length; i++) {
         doc[i].addEventListener('click', function () {
+            if (!this.classList.contains("select")){
+                if(isCorrect(this)) acceptSound.play();
+                else denySound.play();
+            }
+
             this.classList.toggle("select");
             var box = this.parentElement.parentElement;
             var imgBox = this.parentElement;
@@ -250,7 +259,6 @@ function imagesUnclickable(){
         doc[i].style.pointerEvents = "none";
     }
 }
-
 function toggleVisablity(id) {
     if (document.getElementById(id).style.visibility === "visible") {
         document.getElementById(id).style.visibility = "hidden";
