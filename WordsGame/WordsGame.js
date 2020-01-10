@@ -99,7 +99,6 @@ var doc = document.getElementById("container").getElementsByTagName("img");
 var hiddenDoc = document.getElementById("list").getElementsByTagName("img");
 var currentCorrect = 0;
 var currentSelected = 0;
-
 var currentSrc = "../resurse/sounds/cerintaSunetS2.m4a";
 var currentSound = new Audio();
 currentSound.src = currentSrc;
@@ -112,15 +111,21 @@ function speakerEventListener(){
     });
 }
 function imagesOnClick(){
-    var acceptSound = new Audio();
-    acceptSound.src = "../resurse/sounds/CorrectAnswer.mp3";
-    var denySound = new Audio();
-    denySound.src = "../resurse/sounds/maiIncearca1.m4a";
+
     for (var i = 0; i < doc.length; i++) {
         doc[i].addEventListener('click', function () {
+            var acceptSound = new Audio();
+            acceptSound.src = "../resurse/sounds/CorrectAnswer.mp3";
+            var denySound = new Audio();
+            denySound.src = "../resurse/sounds/maiIncearca1.m4a";
             if (!this.classList.contains("select")){
-                if(isCorrect(this)) acceptSound.play();
-                else denySound.play();
+                if(isCorrect(this)){
+                    acceptSound.currentTime = 0;
+                    acceptSound.play();
+                }else{
+                    denySound.currentTime = 0;
+                    denySound.play();
+                }
             }
 
             this.classList.toggle("select");
@@ -157,6 +162,7 @@ function winEffect(){
     var sound = new Audio();
     sound.src = "../resurse/sounds/victoryGame.mp3";
     sound.play();
+
     var correctImages = [];
 
     for (var j = 0; j < doc.length; j++) {
@@ -171,14 +177,15 @@ function winEffect(){
     removeImages();
     hiddenImagesOnClick();
     leaveCorrectImages(correctImages);
+    var speakerSound = new Audio();
     setTimeout(function()
     {
-        var speakerSound = new Audio();
+
         speakerSound.src = "../resurse/sounds/cerintaSunetS3.m4a";
         speakerSound.play();
-
     }, 3000);
     currentSound.src = "../resurse/sounds/cerintaSunetS3.m4a";
+
 }
 
 
@@ -210,7 +217,6 @@ function imagesEventListener(){
 
 var soundFail = new Audio();
 soundFail.src = "../resurse/sounds/maiIncearca1.m4a";
-
 function hiddenImagesOnClick(){
     for (var i = 0; i < hiddenDoc.length; i++) {
         hiddenDoc[i].addEventListener('click', function () {
@@ -220,7 +226,6 @@ function hiddenImagesOnClick(){
 
                 if(soundFail.paused)  soundFail.play();
             }
-
         });
     }
 }
@@ -229,9 +234,8 @@ function secondWinEffect(){
     var sound = new Audio();
     sound.src = "../resurse/sounds/victoryGame.mp3";
     sound.play();
-
-
     toggleVisablity("Message-Container");
+    return true;
 
 
 }

@@ -127,8 +127,13 @@ function imagesOnClick(){
     for (var i = 0; i < doc.length; i++) {
         doc[i].addEventListener('click', function () {
             if (!this.classList.contains("select")){
-                if(isCorrect(this)) acceptSound.play();
-                else denySound.play();
+                if(isCorrect(this)){
+                    acceptSound.currentTime = 0;
+                    acceptSound.play();
+                }else{
+                    denySound.currentTime = 0;
+                    denySound.play();
+                }
             }
             this.classList.toggle("select");
             var box = this.parentElement.parentElement;
