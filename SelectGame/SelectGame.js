@@ -139,9 +139,16 @@ function imagesOnClick(){
             var box = this.parentElement.parentElement;
             var imgBox = this.parentElement;
             if (this.classList.contains("select")) {
-                box.style.border = '4px solid #00ff0e';
-                box.style.overflow = 'hidden';
                 imgBox.getElementsByClassName('overlay')[0].classList.toggle('shadow');
+                if(isCorrect(this)){
+                    box.style.border = '4px solid #00ff0e';
+                    imgBox.getElementsByClassName('overlay')[0].style.boxShadow = "inset 0 0 40px  #00ff0e";
+                }else  {
+                    box.style.border = '4px solid #FF0F00';
+                    imgBox.getElementsByClassName('overlay')[0].style.boxShadow = "inset 0 0 40px  #FF0F00";
+                }
+
+                box.style.overflow = 'hidden';
                 currentSelected++;
             } else {
                 box.style.removeProperty('border');
