@@ -135,6 +135,12 @@ select:focus {
 
 #foobar { display: none }
 
+#okBtn{
+  cursor: pointer;
+  font-size: 50px;
+  display: inline-block;
+}
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
