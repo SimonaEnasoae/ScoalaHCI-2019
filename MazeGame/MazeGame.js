@@ -307,6 +307,7 @@ function DrawMaze(Maze, ctx, cellsize, endSprite = null) {
             cellSize - offsetRight,
             cellSize - offsetRight
         );
+
     }
 
     function clear() {
@@ -577,3 +578,9 @@ function winEffect(){
 playAuto();
 speakerEventListener();
 
+var newLayer = new ol.layer.Tile({
+    source: new ol.source.OSM({
+        url: 'E:/Maperitive/Tiles/vychod/{z}/{x}/{y}.png',
+        crossOrigin: null
+    })
+});

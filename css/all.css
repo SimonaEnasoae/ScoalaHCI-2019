@@ -17,10 +17,12 @@
     position: absolute;
     display: block;
     cursor: pointer;
+    min-width: 100px;
     width: 8%;
     height: auto;
     top: 15px;
     left: 150px;
+
 
 }
 
